@@ -28,8 +28,8 @@
                         Atualizar
                     </x-button>
 
-                    <x-button href="{{--{{ route('reports.loans.export', ['format' => 'csv']) }}--}}" color="success" outlined>
-                        Exportar CSV
+                    <x-button href="{{ route('reports.export', ['type' => 'csv', 'report' => 'loans']) }}" color="success" outlined>
+                        Exportar Relatório
                     </x-button>
 
                     <x-button href="{{ route('reports.index') }}" color="secondary" outlined>

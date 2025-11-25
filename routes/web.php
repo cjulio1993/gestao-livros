@@ -41,6 +41,7 @@ Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/reports/books', [ReportController::class, 'books'])->name('reports.books');
     Route::get('/reports/users', [ReportController::class, 'users'])->name('reports.users');
     Route::get('/reports/overdue', [ReportController::class, 'overdue'])->name('reports.overdue');
+    Route::get('/reports/export/{type}', [ReportController::class, 'export'])->name('reports.export');
     
     // Perfil do usuário
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

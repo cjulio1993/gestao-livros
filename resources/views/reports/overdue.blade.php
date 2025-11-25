@@ -29,8 +29,8 @@
                         Atualizar
                     </x-button>
 
-                    <x-button href="{{-- route('reports.overdue.export', ['format' => 'csv']) --}}" color="danger" outlined>
-                        Exportar CSV
+                    <x-button href="{{ route('reports.export', ['type' => 'csv', 'report' => 'overdue']) }}" color="danger" outlined>
+                        Exportar Relatório
                     </x-button>
 
                     <x-button href="{{ route('reports.index') }}" color="secondary" outlined>
